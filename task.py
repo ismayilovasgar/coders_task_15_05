@@ -17,9 +17,8 @@ path_2 = os.path.dirname(__file__) + "/new_txt_2.txt"
 with open(path_1, encoding="utf-8", mode="w+") as data:
     data.write(text_content)
     data.seek(0)
-    ilk_setir = [i.upper() for i in data.readlines() ][0]
+    ilk_setir = [i.upper() for i in data.readlines()][0]
 
 
 with open(path_2, encoding="utf-8", mode="w") as data:
     data.write(ilk_setir)
-
